@@ -1,9 +1,10 @@
 library(tidyverse)
 library(lubridate)
+
 d <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv")
+unique(d$`Country/Region`)
 
-
-country <- "Germany"
+country <- "Italy"
 
 
 d2 <- d %>% filter(`Country/Region` == country) %>% select(-`Province/State`, -`Lat`,-`Long`)
@@ -24,10 +25,13 @@ str(d3)
 
 #View(d3)
 
-d3 %>% ggplot(aes(date_readable, cases)) +
-  geom_point() +
+p <- d3 %>% ggplot(aes(date_readable, cases)) +
+  geom_line(col = "red", size = 1) +
+  geom_point(col = "black", size = 2) +
   theme_bw() +
-  ggtitle(paste0("Corona cases ", country, " (data from JHU CCSE)")) +
+  ggtitle(paste0(country, " - Corona cases (data from JHU CCSE)")) +
   xlab("Date") +
   ylab("Confirmed cases")
-  
+p
+
+ggsave(paste0("plots/plot_",country,".png"), p)  
