@@ -1,10 +1,8 @@
 # put in country name here:
-country <- "Germany"
+country <- "Iran"
 
 library(tidyverse)
 library(lubridate)
-
-names(d)
 
 d <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv") %>% 
   group_by(`Country/Region`) %>% summarize(`1/22/20` = sum(`1/22/20`),
@@ -46,7 +44,8 @@ d <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/
                                            `2/27/20` = sum(`2/27/20`),
                                            `2/28/20` = sum(`2/28/20`),
                                            `2/29/20` = sum(`2/29/20`),
-                                           `3/1/20` = sum(`3/1/20`))
+                                           `3/1/20` = sum(`3/1/20`),
+                                           `3/3/20` = sum(`3/2/20`))
 
 # add new dates in list above when available
 
