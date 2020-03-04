@@ -1,5 +1,5 @@
 # put in country name here:
-country <- "Iran"
+country <- "UK"
 
 library(tidyverse)
 library(lubridate)
@@ -45,7 +45,8 @@ d <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/
                                            `2/28/20` = sum(`2/28/20`),
                                            `2/29/20` = sum(`2/29/20`),
                                            `3/1/20` = sum(`3/1/20`),
-                                           `3/3/20` = sum(`3/2/20`))
+                                           `3/2/20` = sum(`3/2/20`),
+                                           `3/3/20` = sum(`3/3/20`))
 
 # add new dates in list above when available
 
