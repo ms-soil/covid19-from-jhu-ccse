@@ -4,7 +4,7 @@ library(lubridate)
 d <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv")
 unique(d$`Country/Region`)
 
-country <- "Italy"
+country <- "Germany"
 
 
 d2 <- d %>% filter(`Country/Region` == country) %>% select(-`Province/State`, -`Lat`,-`Long`)
