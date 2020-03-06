@@ -5,9 +5,13 @@ library(ggrepel)
 
 source("get-data.R")
 
+# country1 <- "South Korea"
+# country2 <- "Italy"
+# country3 <- "Iran"
+ 
 country1 <- "Germany"
-country2 <- "Austria"
-country3 <- "Switzerland"
+country2 <- "US"
+country3 <- "Japan"
 
 country <- country1
 source("run-by-country.R")
