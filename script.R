@@ -9,9 +9,9 @@ source("get-data.R")
 # country2 <- "Italy"
 # country3 <- "Iran"
  
-country1 <- "Germany"
-country2 <- "US"
-country3 <- "Japan"
+country1 <- "France"
+country2 <- "Switzerland"
+country3 <- "Austria"
 
 country <- country1
 source("run-by-country.R")
