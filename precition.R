@@ -63,4 +63,5 @@ prediction_day_54_sun_mar_15
 # 9031
 
 # #geschätzte Korrektur * 0.66
+1.355 ^ (61 - 24.01832) 
 
