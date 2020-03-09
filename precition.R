@@ -15,8 +15,13 @@ d3$days <- seq(1:length(d3$date_readable))
 
 c1 <- d3
 
-p <- ggplot() +  
+upper <- max(c1$cases)*1.1
+
+p <- ggplot() +
   theme_bw() +
+  geom_rect(aes(xmin=31.5, xmax=33.5, ymin=0, ymax=upper), fill = "green", alpha = 0.2) + # weekend
+  geom_rect(aes(xmin=38.5, xmax=40.5, ymin=0, ymax=upper), fill = "green", alpha = 0.2) + # weekend
+  geom_rect(aes(xmin=45.5, xmax=47.5, ymin=0, ymax=upper), fill = "green", alpha = 0.2) + # weekend
   ggtitle("Corona cases (data from JHU CCSE)") +
   xlab("Date") +
   ylab("Confirmed cases") +

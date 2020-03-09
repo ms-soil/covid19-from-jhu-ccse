@@ -7,7 +7,7 @@ library(gridExtra)
 source("get-data.R")
 
 
-for (i in list (1,2,3,4)) {
+for (i in list (1,2,3,4,5)) {
   
   if (i == 1) {
     country1 <- "South Korea"
@@ -32,6 +32,12 @@ for (i in list (1,2,3,4)) {
     country2 <- "Netherlands"
     country3 <- "Belgium"
   }
+  
+  if (i == 5) {
+    country1 <- "Canada"
+    country2 <- "Austria"
+    country3 <- "Australia"
+  } 
   
     country <- country1
     source("run-by-country.R")
@@ -65,7 +71,7 @@ for (i in list (1,2,3,4)) {
       geom_label_repel(aes(c2$date_readable[c2$date_readable == "2020-03-06"], 
                            c2$cases[c2$date_readable == "2020-03-06"], 
                            label = c2$country[c2$date_readable == "2020-03-06"]),
-                       nudge_y = 20,
+                       nudge_y = 10,
                        nudge_x = -4)
     #p
     
@@ -81,7 +87,7 @@ for (i in list (1,2,3,4)) {
       geom_label_repel(aes(c3$date_readable[c3$date_readable == "2020-03-05"], 
                            c3$cases[c3$date_readable == "2020-03-05"], 
                            label = c3$country[c3$date_readable == "2020-03-05"]),
-                       nudge_y = 20,
+                       nudge_y = 0,
                        nudge_x = -4)
     p
     
