@@ -46,9 +46,9 @@ for (i in list (1,2,3,4)) {
       ylab("Confirmed cases") +
       geom_line(aes(c1$date_readable, c1$cases),col = "red", size = 1) +
       geom_point(aes(c1$date_readable, c1$cases),col = "black", size = 2) +
-      geom_label_repel(aes(c1$date_readable[c1$date_readable == "2020-03-02"], 
-                           c1$cases[c1$date_readable == "2020-03-02"], 
-                           label = c1$country[c1$date_readable == "2020-03-02"]),
+      geom_label_repel(aes(c1$date_readable[c1$date_readable == "2020-03-07"], 
+                           c1$cases[c1$date_readable == "2020-03-07"], 
+                           label = c1$country[c1$date_readable == "2020-03-07"]),
                        nudge_y = 20,
                        nudge_x = -4)
     #p
@@ -62,9 +62,9 @@ for (i in list (1,2,3,4)) {
     p <- p +
       geom_line(aes(c2$date_readable, c2$cases),col = "blue", size = 1) +
       geom_point(aes(c2$date_readable, c2$cases),col = "black", size = 2) +
-      geom_label_repel(aes(c2$date_readable[c2$date_readable == "2020-03-02"], 
-                           c2$cases[c2$date_readable == "2020-03-02"], 
-                           label = c2$country[c2$date_readable == "2020-03-02"]),
+      geom_label_repel(aes(c2$date_readable[c2$date_readable == "2020-03-06"], 
+                           c2$cases[c2$date_readable == "2020-03-06"], 
+                           label = c2$country[c2$date_readable == "2020-03-06"]),
                        nudge_y = 20,
                        nudge_x = -4)
     #p
@@ -78,9 +78,9 @@ for (i in list (1,2,3,4)) {
     p <- p +
       geom_line(aes(c3$date_readable, c3$cases),col = "orange", size = 1) +
       geom_point(aes(c3$date_readable, c3$cases),col = "black", size = 2) +
-      geom_label_repel(aes(c3$date_readable[c3$date_readable == "2020-03-02"], 
-                           c3$cases[c3$date_readable == "2020-03-02"], 
-                           label = c3$country[c3$date_readable == "2020-03-02"]),
+      geom_label_repel(aes(c3$date_readable[c3$date_readable == "2020-03-05"], 
+                           c3$cases[c3$date_readable == "2020-03-05"], 
+                           label = c3$country[c3$date_readable == "2020-03-05"]),
                        nudge_y = 20,
                        nudge_x = -4)
     p
