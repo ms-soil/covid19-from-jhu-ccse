@@ -59,14 +59,14 @@ length(d3$days)
 1.355 ^ (49 - 24.01832) 
 1.355 ^ (50 - 24.01832) 
 
-prediction_day_50_wed_mar_11 <- 1.355 ^ (50 - 24.01832) 
+prediction_day_50_wed_mar_11 <- 1.355 ^ (50 - 24.01832) * 0.66
 prediction_day_50_wed_mar_11
-# 2679
+# 1768
 
-prediction_day_54_sun_mar_15 <- 1.355 ^ (54 - 24.01832) 
+prediction_day_54_sun_mar_15 <- 1.355 ^ (54 - 24.01832) * 0.66 
 prediction_day_54_sun_mar_15
-# 9031
+# 5961
 
 # #geschätzte Korrektur * 0.66
-1.355 ^ (61 - 24.01832) 
+
 
