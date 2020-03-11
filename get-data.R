@@ -48,7 +48,8 @@ d <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/
                                            `3/6/20` = sum(`3/6/20`),
                                            `3/7/20` = sum(`3/7/20`),
                                            `3/8/20` = sum(`3/8/20`),
-                                           `3/9/20` = sum(`3/9/20`))
+                                           `3/9/20` = sum(`3/9/20`),
+                                           `3/10/20` = sum(`3/10/20`))
 
 # add new dates in list above when available
 
