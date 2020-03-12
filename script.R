@@ -10,7 +10,7 @@ source("get-data.R")
 for (i in list (1,2,3,4,5)) {
   
   if (i == 1) {
-    country1 <- "South Korea"
+    country1 <- "Korea, South"
     country2 <- "Italy"
     country3 <- "Iran"
   }

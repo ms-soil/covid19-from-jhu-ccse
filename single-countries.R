@@ -7,9 +7,9 @@ library(gridExtra)
 source("get-data.R")
 
 
-    country1 <- "Austria"
-    country2 <- "France"
-    country3 <- "Spain"
+    country1 <- "US"
+    country2 <- ""
+    country3 <- ""
   
     country <- country1
     source("run-by-country.R")
@@ -81,6 +81,6 @@ source("get-data.R")
 
   
   #assign(paste0("plot",i), p)
-  #ggsave(paste0("plots/plot_",country1,"_",country2,"_",country3,".png"), p)  
+  ggsave(paste0("plots/plot_",country1,"_",country2,"_",country3,".png"), p)  
 
 
