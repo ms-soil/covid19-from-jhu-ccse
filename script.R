@@ -28,7 +28,7 @@ for (i in list (1,2,3,4,5)) {
   }
   
   if (i == 4) {
-    country1 <- "UK"
+    country1 <- "United Kingdom"
     country2 <- "Netherlands"
     country3 <- "Belgium"
   }
@@ -56,11 +56,11 @@ for (i in list (1,2,3,4,5)) {
     ylab("Confirmed cases") +
     geom_line(aes(c1$date_readable, c1$cases),col = "red", size = 1) +
     geom_point(aes(c1$date_readable, c1$cases),col = "black", size = 2) +
-    geom_label_repel(aes(c1$date_readable[c1$date_readable == enddate-1], 
-                         c1$cases[c1$date_readable == enddate-1], 
-                         label = c1$country[c1$date_readable == enddate-1]),
-                     nudge_y = -150,
-                     nudge_x = 5) +
+    geom_label_repel(aes(c1$date_readable[c1$date_readable == enddate], 
+                         c1$cases[c1$date_readable == enddate], 
+                         label = c1$country[c1$date_readable == enddate]),
+                     nudge_y = 0,
+                     nudge_x = -5) +
     geom_text_repel(aes(c1$date_readable[c1$date_readable == enddate], 
                         c1$cases[c1$date_readable == enddate], 
                         label = c1$cases[c1$date_readable == enddate]),
@@ -76,11 +76,11 @@ for (i in list (1,2,3,4,5)) {
   p <- p +
     geom_line(aes(c2$date_readable, c2$cases),col = "blue", size = 1) +
     geom_point(aes(c2$date_readable, c2$cases),col = "black", size = 2) +
-    geom_label_repel(aes(c2$date_readable[c2$date_readable == enddate-1], 
-                         c2$cases[c2$date_readable == enddate-1], 
-                         label = c2$country[c2$date_readable == enddate-1]),
-                     nudge_y = -75,
-                     nudge_x = 5) +
+    geom_label_repel(aes(c2$date_readable[c2$date_readable == enddate], 
+                         c2$cases[c2$date_readable == enddate], 
+                         label = c2$country[c2$date_readable == enddate]),
+                     nudge_y = 0,
+                     nudge_x = -5) +
     geom_text_repel(aes(c2$date_readable[c2$date_readable == enddate], 
                         c2$cases[c2$date_readable == enddate], 
                         label = c2$cases[c2$date_readable == enddate]),
@@ -96,11 +96,11 @@ for (i in list (1,2,3,4,5)) {
   p <- p +
     geom_line(aes(c3$date_readable, c3$cases),col = "orange", size = 1) +
     geom_point(aes(c3$date_readable, c3$cases),col = "black", size = 2) +
-    geom_label_repel(aes(c3$date_readable[c3$date_readable == enddate-1], 
-                         c3$cases[c3$date_readable == enddate-1], 
-                         label = c3$country[c3$date_readable == enddate-1]),
+    geom_label_repel(aes(c3$date_readable[c3$date_readable == enddate], 
+                         c3$cases[c3$date_readable == enddate], 
+                         label = c3$country[c3$date_readable == enddate]),
                      nudge_y = 0,
-                     nudge_x = 5) +
+                     nudge_x = -5) +
     geom_text_repel(aes(c3$date_readable[c3$date_readable == enddate], 
                         c3$cases[c3$date_readable == enddate], 
                         label = c3$cases[c3$date_readable == enddate]),
