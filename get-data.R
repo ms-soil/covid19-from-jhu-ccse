@@ -1,6 +1,5 @@
 
-
-d <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv") %>% 
+d <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv") %>% 
   group_by(`Country/Region`) %>% summarize(`1/22/20` = sum(`1/22/20`),
                                            `1/23/20` = sum(`1/23/20`),
                                            `1/24/20` = sum(`1/24/20`),
@@ -61,7 +60,10 @@ d <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/
                                            `3/19/20` = sum(`3/19/20`),
                                            `3/20/20` = sum(`3/20/20`),
                                            `3/21/20` = sum(`3/21/20`),
-                                           `3/22/20` = sum(`3/22/20`)
+                                           `3/22/20` = sum(`3/22/20`),
+                                           `3/23/20` = sum(`3/23/20`),
+                                           `3/24/20` = sum(`3/24/20`),
+                                           `3/25/20` = sum(`3/25/20`)
                                                                      )
 
 
