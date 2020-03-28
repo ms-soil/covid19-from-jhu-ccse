@@ -63,7 +63,9 @@ d <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/
                                            `3/22/20` = sum(`3/22/20`),
                                            `3/23/20` = sum(`3/23/20`),
                                            `3/24/20` = sum(`3/24/20`),
-                                           `3/25/20` = sum(`3/25/20`)
+                                           `3/25/20` = sum(`3/25/20`),
+                                           `3/26/20` = sum(`3/26/20`),
+                                           `3/27/20` = sum(`3/27/20`),
                                                                      )
 
 
